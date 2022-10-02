@@ -99,6 +99,8 @@ msg(){
     -bar2) cor="${COLOR[7]}=====================================================" && echo -e "${SEMCOR}${cor}${SEMCOR}";;
     -bar3) cor="${COLOR[1]}-----------------------------------------------------" && echo -e "${SEMCOR}${cor}${SEMCOR}";;
     -bar4) cor="${COLOR[7]}-----------------------------------------------------" && echo -e "${SEMCOR}${cor}${SEMCOR}";;
+	-bar5)cor="\e[1;30m————————————————————————————————————————————————————" && echo -e "${SEMCOR}${cor}${SEMCOR}";;
+	-bar6)cor="\e[1;31m════════════════════════════════════════════════════" && echo -e "${SEMCOR}${cor}${SEMCOR}";;
   esac
 }
 
@@ -244,4 +246,3 @@ export -f enter
 export -f in_opcion
 export -f in_opcion_down
 export -f del
-
